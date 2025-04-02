@@ -10,6 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors())
 app.use("/", router);
+
 app.listen(config.port, ()=>{
     console.log(`api running on ${config.port}`)
 });
